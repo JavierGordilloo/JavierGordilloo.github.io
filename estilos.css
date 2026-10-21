@@ -1,11 +1,10 @@
  body {
-            font-family: sans-serif;
+            font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding-bottom: 30px;
         }
 
-        /* Encabezado y título centrado con fondo y borde */
         header {
             background-color: #222;
             color: white;
@@ -18,8 +17,7 @@
             background-color: #e65100;
             color: white;
             padding: 10px 20px;
-            border: 3px solid #fff;
-            border-radius: 25px;
+            border: 2px solid #fff;
             margin-bottom: 15px;
         }
 
@@ -30,13 +28,11 @@
             font-weight: bold;
         }
 
-        /* Títulos de secciones */
         section h2 {
             text-align: center;
             margin-top: 30px;
         }
 
-        /* Disposición horizontal para las leyendas */
         .jugadores {
             display: flex;
             flex-wrap: wrap;
@@ -47,20 +43,17 @@
 
         .jugadores article {
             background: white;
-            border-radius: 8px;
+            border: 1px solid #ccc;
             padding: 15px;
             width: 215px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
 
         .jugadores article img, .comparacion img {
             width: 100%;
             height: 250px;
             object-fit: cover;
-            border-radius: 5px;
         }
 
-        /* Comparación Jordan vs Kobe (en paralelo) */
         .comparacion {
             display: flex;
             justify-content: center;
@@ -71,27 +64,22 @@
 
         .comparacion > div {
             background: white;
+            border: 1px solid #ccc;
             padding: 15px;
-            border-radius: 8px;
             text-align: center;
             width: 200px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
 
         .comparacion > h2 {
             background: #e65100;
             color: white;
-            padding: 10px;
-            border-radius: 50%;
+            padding: 10px 15px;
+            margin: 0;
         }
 
-        /* Pie de página */
         footer {
             text-align: center;
             background: #222;
             color: white;
             padding: 10px;
         }
-    h1{
-        text-align: center;
-    }

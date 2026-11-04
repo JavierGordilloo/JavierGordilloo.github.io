@@ -1,0 +1,173 @@
+:root {
+    --naranja: #f58426;
+    --fondo: #0f1117;
+    --tarjeta: #1b1f2a;
+    --texto: #f2f2f2;
+    --texto-suave: #b8bcc8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+/* Cabecera */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #000;
+    border-bottom: 4px solid var(--naranja);
+    text-align: center;
+    padding: 15px 10px;
+}
+
+h1 {
+    margin: 0 0 10px;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    text-transform: uppercase;
+    color: var(--naranja);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--texto);
+    text-decoration: none;
+    padding: 8px 18px;
+    border: 2px solid var(--naranja);
+    border-radius: 999px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background: var(--naranja);
+    color: #000;
+}
+
+/* Secciones */
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    scroll-margin-top: 110px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 30px;
+}
+
+/* Tarjetas */
+.jugadores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+article {
+    background: var(--tarjeta);
+    border-radius: 0; /* Esquinas en punta */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(245, 132, 38, 0.35);
+}
+
+article img,
+.comparacion img {
+    width: 100%;
+    max-width: 200px;
+    height: 240px;
+    object-fit: contain; /* Evita que la imagen se corte y se vea entera */
+    background-color: var(--tarjeta); /* Fondo de apoyo por si queda espacio */
+    border-radius: 0;
+    border: 3px solid var(--naranja);
+}
+
+h3 {
+    margin: 15px 0 10px;
+    font-size: 1.4rem;
+    color: var(--naranja);
+}
+
+article p {
+    margin: 6px 0;
+    font-size: 0.95rem;
+    color: var(--texto-suave);
+}
+
+article p b {
+    color: var(--texto);
+}
+
+/* Comparación */
+.comparacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.comparacion > div {
+    background: var(--tarjeta);
+    border-radius: 0; /* Esquinas en punta también para la comparativa */
+    padding: 25px;
+    text-align: center;
+    min-width: 260px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.comparacion p {
+    margin: 8px 0;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+.comparacion b {
+    color: var(--naranja);
+}
+
+.comparacion h2 {
+    margin: 0;
+    font-size: 3rem;
+    color: var(--naranja);
+}
+
+/* Pie */
+footer {
+    background: #000;
+    border-top: 4px solid var(--naranja);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: var(--texto-suave);
+}
